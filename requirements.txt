@@ -1,0 +1,31 @@
+# ===== Core (leve, suficiente p/ rodar API + ingestão + ChromaDB) =====
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pydantic-settings>=2.3
+httpx>=0.27
+beautifulsoup4>=4.12
+lxml>=5.2
+rank-bm25>=0.2.2
+numpy>=1.26
+tiktoken>=0.7
+chromadb>=0.5
+PyJWT>=2.8
+prometheus-client>=0.20
+tenacity>=8.3
+
+# ===== LLMs (instale só o que for usar; FakeLLM funciona sem nenhum) =====
+openai>=1.40            # GPT-4.1 / GPT-5.x + text-embedding-3-*
+anthropic>=0.34         # Claude Sonnet
+
+# ===== Opcionais (descomente conforme necessidade) =====
+# google-genai>=1.0           # Gemini
+# sentence-transformers>=3.0  # BGE / E5 / Instructor + BGE reranker (pesado)
+# faiss-cpu>=1.8              # backend FAISS
+# qdrant-client>=1.9          # backend Qdrant (produção)
+# cohere>=5.5                 # Cohere Rerank
+# ragas>=0.1.21               # avaliação RAGAS
+# datasets>=2.19              # exigido pelo RAGAS
+# opentelemetry-sdk>=1.25                       # tracing
+# opentelemetry-exporter-otlp-proto-grpc>=1.25  # tracing
+# opentelemetry-instrumentation-fastapi>=0.46b0 # tracing

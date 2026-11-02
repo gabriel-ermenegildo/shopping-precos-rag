@@ -1,0 +1,35 @@
+{
+  "description": "Dataset dourado para avaliação RAGAS — perguntas reais sobre a API do Shopping de Preços",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Como autenticar na API do Shopping de Preços?",
+      "expected_topics": ["Authorization", "Basic", "X-Client", "token de desenvolvedor"]
+    },
+    {
+      "id": "q2",
+      "question": "Como atualizar o estoque de um produto pela API?",
+      "expected_topics": ["atualizaEstoqueProduto", "POST", "estoque"]
+    },
+    {
+      "id": "q3",
+      "question": "Como enviar produtos para o Shopping de Preços?",
+      "expected_topics": ["envio de produto", "POST", "payload"]
+    },
+    {
+      "id": "q4",
+      "question": "Como listar as integrações disponíveis?",
+      "expected_topics": ["lista de integrações", "GET", "plataformas"]
+    },
+    {
+      "id": "q5",
+      "question": "Como atualizar preços de produtos?",
+      "expected_topics": ["atualização de preço", "POST", "payload"]
+    },
+    {
+      "id": "q6",
+      "question": "Como consultar pedidos recebidos pela API?",
+      "expected_topics": ["pedidos", "fluxo de pedidos", "consulta"]
+    }
+  ]
+}
